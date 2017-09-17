@@ -1,0 +1,169 @@
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body, a {
+    font-family: arial,sans-serif;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* make the list position to the right */
+ul#topnav {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    list-style-type: none;
+}
+
+/* make all list horizontally order */
+li {
+    display: inline;
+}
+
+ul#topnav li {
+    padding: 0.5em;
+}
+
+ul#topnav li.nav_text a {
+    color: black;
+    opacity: 0.75;
+}
+
+ul#topnav li a#apps {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("sprite.png");
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    vertical-align: middle; /*The element is placed in the middle of the parent element*/
+    opacity: .55;
+}
+
+ul#topnav li a#apps:hover {
+    opacity: .8;
+}
+
+ul#topnav li#signin a {
+    background-color: rgb(71, 121, 239);
+    border-radius: 3px;
+    padding: .6em 1em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+}
+
+#content {
+    position: relative;
+    top: 15em;
+    min-width: 756px;
+}
+
+.googlelogo {
+    background: url(googlelogo_color_272x92dp.png) no-repeat;
+    background-size: 272px 92px;
+    height: 92px;
+    width: 272px;
+    margin: 0 auto;
+}
+
+.indotext {
+    color: #4285f4;
+    position: relative;
+    top: 76px;
+    left: 215px;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+}
+
+form, #text_content {
+    text-align: center; /* make all elements inside form horizontally center */
+}
+
+input {
+    outline: none;
+}
+
+#search_box {
+    font: 1.4em Arial, sans-serif; /* make the box bigger as the font-size */
+    margin: 2em; /* give some space for surrounding box */
+    padding: 0.5em; /* give some space to the font against the box */
+    width: 80%;
+    max-width: 30em;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    /*transition: .1s ease-in-out;*/
+}
+
+#search_box:hover,
+#search_box:focus {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.16), 2px 2px 5px 3px rgba(0, 0, 0, 0.08);
+}
+
+.voice-search {
+    position: relative;
+    display: inline;
+    top: 8px;
+    left: -70px;
+}
+
+#buttons input {
+    border: 1px solid rgb(244, 244, 244);
+    border-radius: 3px;
+    font: bold 1em Arial, sans-serif;
+    padding: 0.6em 1.2em;
+    color: rgb(117, 117, 117);
+    background: rgb(244, 244, 244);
+}
+
+#buttons input:hover,
+#buttons input:focus {
+    border: 1px solid rgb(198, 198, 198);
+    color: rgb(34, 34, 34);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+#text_content {
+    margin: 2em;
+}
+
+#text_content a {
+    margin: 0 .3em;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(242, 242, 242);
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+#footer .l_foot {
+    float: left;
+}
+
+#footer .r_foot {
+    float: right;
+}
+
+#footer ul {
+    padding: 1em 2em;
+}
+
+#footer li {
+    padding: 1em;
+}
+
+#footer a {
+    color: rgb(102, 102, 102);
+}
